@@ -2,10 +2,10 @@
 Rooty CMS is open source content management system.
 
 ## To Dos
-- [ ] Create router.
-- [ ] Create basic database models.
-  - [ ] Content model.
-  - [ ] User model.
+- [x] Create routers.
+- [x] Create basic database models.
+  - [x] Content model.
+  - [x] User model.
 - [ ] Create "add user" api.
 - [ ] Create admin apis.
   - [ ] Add contents.
@@ -21,4 +21,4 @@ Rooty CMS is open source content management system.
 Check [Contributing Guidelines](https://github.com/rootysoftware/rooty-cms/blob/main/CONTRIBUTING.md)
 
 ## License
-This repository uses Apache License 2.0. Please read [LICENSE](https://github.com/rootysoftware/rooty-cms/blob/main/LICENSE).
+This project uses Apache License 2.0. Please read [LICENSE](https://github.com/rootysoftware/rooty-cms/blob/main/LICENSE).
