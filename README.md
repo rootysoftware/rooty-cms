@@ -6,7 +6,7 @@ Rooty CMS is open source content management system.
 - [x] Create basic database models.
   - [x] Content model.
   - [x] User model.
-- [ ] Create "add user" api.
+- [x] Create "add user" api.
 - [ ] Create admin apis.
   - [ ] Add contents.
   - [ ] Get users.
