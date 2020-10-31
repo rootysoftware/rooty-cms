@@ -1,17 +1,20 @@
 const express = require('express');
+const app = express();
 const bodyParser = require('body-parser');
 const morgan = require('morgan');
 const chalk = require('chalk');
 const mongoose = require('mongoose');
-
 const dotenv = require('dotenv');
+
 dotenv.config();
 
-const mongoConnectionUrl = process.env.MONGO_URL;
-mongoose.connect(mongoConnectionUrl, {useNewUrlParser: true, useUnifiedTopology: true});
-
-const app = express();
 const port = process.env.PORT || 3000;
+
+const mongoConnectionUrl = process.env.MONGO_URL;
+
+mongoose.connect(mongoConnectionUrl, { useNewUrlParser: true, useUnifiedTopology: true }).then(() => {
+    console.log(chalk.green('Connected to MongoDB Database.'));
+});
 
 //Route definitions
 const homeRoute = require('./routes/home');
